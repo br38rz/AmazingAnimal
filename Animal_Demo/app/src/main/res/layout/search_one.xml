@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_rhinoceros"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:onClick="rh_Click"
+            android:src="@drawable/rhinoceros"/>
+        <ImageButton
+            android:id="@+id/btn_crocodile"
+            android:layout_marginRight="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:onClick="cro_Click"
+            android:src="@drawable/crocodile"/>
+        <ImageButton
+            android:id="@+id/btn_tortoise"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@null"
+            android:onClick="tor_Click"
+            android:background="@drawable/tortoise"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:orientation="horizontal"
+        android:layout_below="@id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_lion"
+            android:scaleType="fitXY"
+            android:src="@drawable/lion"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="lion_Click"/>
+        <ImageButton
+            android:id="@+id/btn_elephant"
+            android:scaleType="fitXY"
+            android:src="@drawable/elephant"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="ele_Click"/>
+        <ImageButton
+            android:id="@+id/btn_monkey"
+            android:scaleType="fitXY"
+            android:src="@drawable/monkey"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="mon_Click"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_line"
+        android:layout_below="@id/second_line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_squirrel"
+            android:scaleType="fitXY"
+            android:src="@drawable/squirrel"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="squ_Click"/>
+        <ImageButton
+            android:id="@+id/btn_rabbit"
+            android:scaleType="fitXY"
+            android:src="@drawable/rabbit"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="rab_Click"/>
+        <ImageButton
+            android:id="@+id/btn_giraffe"
+            android:scaleType="fitXY"
+            android:src="@drawable/giraffe"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="gir_Click"/>
+    </LinearLayout>
+
+</RelativeLayout>
