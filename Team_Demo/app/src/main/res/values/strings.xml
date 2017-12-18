@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Animal_Demo</string>
+    <string name="info_us">\u3000\u3000我们的APP以动物园为基础，通过让用户
+        扫描二维码的方式，对动物园中的游客们介绍
+        各类动物的生活习性，居住范围等百科知识，
+        展示动物的生活状态等\n
+        \u3000\u3000我们的目的是向更多的人传播有关动物的知识,
+        使得更多的人们来关爱动物，保护动物</string>
+    <string name="info_support">
+        \u3000\u3000为了更好的改善和提升本产品\n
+        \u3000\u3000请您大胆的提出想法和建议\n
+        \u3000\u3000快去应用商店为我们评分吧 (´・ω・`)
+    </string>
+    <string name="info_version">
+        最新版本号:1.0.0\n
+        更新时间:2017.7.3
+    </string>
+</resources>

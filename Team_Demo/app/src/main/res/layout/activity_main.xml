@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_page_bc"
+    tools:context="com.example.animal.animal_demo.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mRadioGroup">
+    </FrameLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/buttom_bar_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_left_main"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/btn_left"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_mid_main"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/btn_mid"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_right_main"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:background="@null"-->
+            <!--android:src="@drawable/btn_right"/>-->
+
+
+    <!--</LinearLayout>-->
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_search"
+            android:drawableTop="@drawable/drawable_search"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="搜索"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_map"
+            android:drawableTop="@drawable/drawable_map"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="地图"/>
+
+        <RadioButton
+            android:id="@+id/btn_version"
+            android:drawableTop="@drawable/drawable_us"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关于我们"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_page_bc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_bar">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/Animal_Image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/first_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+     </ScrollView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Animal_GIF"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_search"
+            android:drawableTop="@drawable/drawable_search"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="搜索"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_map"
+            android:drawableTop="@drawable/drawable_map"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="地图"/>
+
+        <RadioButton
+            android:id="@+id/btn_version"
+            android:drawableTop="@drawable/drawable_us"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关于我们"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

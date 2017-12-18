@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/first_line_two"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_camel"
+            android:scaleType="fitXY"
+            android:src="@drawable/camel"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="cam_Click"/>
+        <ImageButton
+            android:id="@+id/btn_zebra"
+            android:scaleType="fitXY"
+            android:src="@drawable/zebra"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="zrb_Click"/>
+        <ImageButton
+            android:id="@+id/btn_panda"
+            android:scaleType="fitXY"
+            android:src="@drawable/panda"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="pan_Click"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line_two"
+        android:layout_below="@id/first_line_two"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_parrot"
+            android:scaleType="fitXY"
+            android:src="@drawable/parrot"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="par_Click"/>
+        <ImageButton
+            android:id="@+id/btn_fox"
+            android:scaleType="fitXY"
+            android:src="@drawable/fox"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="fox_Click"/>
+        <ImageButton
+            android:id="@+id/btn_hippo"
+            android:scaleType="fitXY"
+            android:src="@drawable/hippo"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="hip_Click"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_line_two"
+        android:layout_below="@id/second_line_two"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_peacock"
+            android:scaleType="fitXY"
+            android:src="@drawable/peacock"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="pea_Click"/>
+        <ImageButton
+            android:id="@+id/btn_ass"
+            android:scaleType="fitXY"
+            android:src="@drawable/donkey"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="ass_Click"/>
+        <ImageButton
+            android:id="@+id/btn_sheep"
+            android:scaleType="fitXY"
+            android:src="@drawable/sheep"
+            android:layout_marginLeft="50dp"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:onClick="she_Click"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
